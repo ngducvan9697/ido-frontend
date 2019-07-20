@@ -1,0 +1,34 @@
+<div class="row">
+  <div class="col s12 m12 l10">
+    <div class="card postDiv">
+      <div class="card-content">
+        <form class="col s12" [formGroup]="postForm" novalidate (ngSubmit)="submitPost()">
+          <div class="formDiv">
+              <textarea formControlName="post" class="materialize-textarea"></textarea>
+          </div>
+          <div class="input-field">
+            <div class="row">
+              <div class="col s6 file-field">
+                  <div class="btn">
+                      <span><i class="material-icons">image</i>File</span>
+                      <input type="file">
+                    </div>
+                    <div class="file-path-wrapper">
+                      <input type="text" class="file-path validate">
+                    </div>
+              </div>
+              <div class="col s6">
+                  <button class="btn postBtn">
+                    Post
+                  </button>
+                </div>
+            </div>
+            
+          </div>
+        </form>
+      </div>    
+    </div>
+  </div>
+  
+</div>
+      

@@ -1,0 +1,14 @@
+.bodyDiv{
+    height: 100vh;
+}
+.tabs a{
+    color: #64b5f6;
+    font-weight: bold;
+    font-size: 18px;
+}
+.tab .active{
+    background: inherit !important;
+}
+.auth-content{
+    height: 600px !important;
+}
