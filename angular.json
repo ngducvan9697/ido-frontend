@@ -24,7 +24,7 @@
             ],
             "styles": [
               "./node_modules/materialize-css/dist/css/materialize.css",
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [
               "./node_modules/materialize-css/dist/js/materialize.js"
@@ -83,7 +83,7 @@
             "tsConfig": "src/tsconfig.spec.json",
             "karmaConfig": "src/karma.conf.js",
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
             "scripts": [],
             "assets": [
@@ -135,5 +135,10 @@
       }
     }
   },
-  "defaultProject": "ido-frontend"
+  "defaultProject": "ido-frontend",
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "scss"
+    }
+  }
 }
